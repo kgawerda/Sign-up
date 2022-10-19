@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+.left-side {
+    background-image: url(./img/malphitebig.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40vw;
+    background-repeat: no-repeat;
+}
+
+.bar {
+    display: flex;
+    height: auto;
+    background-color: rgb(17, 17, 16, 0.7);
+    position: relative;
+    top: 25vh;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    color: aliceblue;
+}
+
+.logo-img {
+    height: 10vh;
+}
+
+.right-side {
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    background-image: url(./img/malphitebig2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 60vw;
+    background-repeat: no-repeat;
+    flex-flow: column nowrap;
+}
+
+.bg {
+    background-color: rgb(17, 17, 16, 0.7);
+}
+
+.text {
+
+    font-weight: 500;
+    width: 100%;
+    font-size: 1.2rem;
+    padding-left: 3vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.input-div {
+    padding-left: 3vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 0 10px 20px -2px rgb(22 22 22);
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input {
+    flex-basis: 45%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.bottom-text {
+    margin-top: 5vh;
+}
+
+.log-in {
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    bottom: 2vh;
+    align-items: flex-end;
+    gap: 1vw;
+    padding-left: 3vw;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin-left: 3vw;
+    margin-top: 3vh;
+    background-color: rgb(17, 17, 16, 0.7);
+    color: #e6007e;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid #e6007e;
+    border-radius: 5px;
+    padding: 10px 40px;
+}
+
+form {
+    margin-top: 5vh;
+    position: relative;
+}
+
+.form-title {
+    position: absolute;
+    padding-bottom: 1vh;
+}
+
+input {
+    background-color: rgb(2, 2, 2, 0.7);
+    border: 1px solid rgb(70, 66, 66);
+    border-radius: 3px;
+    height: 2.5vh;
+}
+
+label {
+    margin-bottom: 3px;
+}
+
+input:valid {
+    border-color: rgb(145, 238, 145, 0.7)
+}
+
+input:invalid {
+    border-color: rgb(255, 0, 0, 0.7);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #e6007e;
+}
+
+button:hover {
+    background-color: #e6007e;
+    color: black;
+    border-color: black;
+}
+
+.bucket {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgb(17, 17, 16, 0.7);
+}
+
+a {
+    color: #8d044f;
+    font-weight: 700;
+    font-size: 1.6em;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-text-fill-color: aliceblue;
+    transition: background-color 5000s ease-in-out 0s;
+}

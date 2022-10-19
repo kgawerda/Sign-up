@@ -10,53 +10,62 @@
 </head>
 
 <body>
-    <div class="left-side">
-        <div class="picture">
-            <div class="logo-img"></div>
-            <div class="logo-text"></div>
-        </div>
-        <div class="credit"></div>
-    </div>
-    <div class="right-side">
-        <div class="text">
-            <p></p>
-            <p></p>
-            <p class="bottom text"></p>
-        </div>
-        <form action="#">
-            <div class="input-div">
-                <div class="input">
-                    <label for="first-name">First name(*)</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Krzysztof" required>
-                </div>
-                <div class="input">
-                    <label for="last-name">Last name(*)</label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Sauć" required>
-                </div>
-                <div class="input">
-                    <label for="email">Email(*)</label>
-                    <input type="email" name="email" id="email" placeholder="golem@gmail.com" required>
-                </div>
-                <div class="input">
-                    <label for="phone">Phone number</label>
-                    <input type="text" name="phone" id="phone" placeholder="420420420" pattern="[0-9]{9}">
-                </div>
-                <div class="input">
-                    <label for="password">Password(*)</label>
-                    <input type="password" name="password" id="password" required>
-                </div>
-                <div class="input">
-                    <label for="confirm-password">Confirm password(*)</label>
-                    <input type="password" name="confirm-password" id="confirm-password" required>
-                </div>
+    <div class="content">
+        <div class="left-side">
+            <div class="bar">
+                <img class="logo-img" src="./img/malphitelogo.png"></img>
+                <h1 class="logo-text">GolemTV</h1>
             </div>
-            <button type="submit">Create account</button>
-        </form>
-        <div class="log-in">
-            <p>Already have an account?</p>
-            <a href="#">Log in</a>
+            <div class="credit"></div>
+        </div>
+        <div class="right-side">
+            <div class="text bg">
+                <p>Are you fascinated by rocks? Is your favourite activity "firmóweczka na bota"? Do you have wet dreams
+                    about golems?</p>
+                <p>If you answered yes to any of these questions, this is for you!</p>
+                <p>Sign up <em>now</em> to start your adventure!</p>
+                <p class="bottom-text">You <em>know</em> you want to.</p>
+            </div>
+            <form onsubmit="return checkPassword(this)" action="#" method="get">
+                <div class="bucket">
+                    <p class="form-title text">Załóż garnek na głowę i lecimy!</p>
+                    <div class="input-div">
+                        <div class="input">
+                            <label for="first-name">First name (*)</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Krzysztof" required>
+                        </div>
+                        <div class="input">
+                            <label for="last-name">Last name (*)</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Sauć" required>
+                        </div>
+                        <div class="input">
+                            <label for="email">Email (*)</label>
+                            <input type="email" name="email" id="email" placeholder="golem@gmail.com" required>
+                        </div>
+                        <div class="input">
+                            <label for="phone">Phone number</label>
+                            <input type="text" name="phone" id="phone" placeholder="420420420" minlength="9"
+                                pattern="[0-9]{9}">
+                        </div>
+                        <div class="input">
+                            <label for="password">Password (*)</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="input">
+                            <label for="confirmPassword">Confirm password (*)</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Create account</button>
+            </form>
+            <div class="log-in">
+                <p>Already have an account?</p>
+                <a href="#">Log in</a>
+            </div>
         </div>
     </div>
 </body>
-<script src="javascript.js"></script>
+<script src="script.js"></script>
+
 </html>
