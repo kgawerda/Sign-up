@@ -26,13 +26,13 @@
                 <p>Sign up <em>now</em> to start your adventure!</p>
                 <p class="bottom-text">You <em>know</em> you want to.</p>
             </div>
-            <form onsubmit="return checkPassword(this)" action="#" method="get">
+            <form action="#" method="get" novalidate>
                 <div class="bucket">
                     <p class="form-title text">Załóż garnek na głowę i lecimy!</p>
                     <div class="input-div">
                         <div class="input">
                             <label for="first-name">First name (*)</label>
-                            <input type="text" name="first-name" id="first-name" placeholder="Krzysztof" required>
+                            <input type="text" name="first-name" id="first-name" placeholder="Krzysztof">
                         </div>
                         <div class="input">
                             <label for="last-name">Last name (*)</label>
@@ -58,6 +58,7 @@
                     </div>
                 </div>
                 <button type="submit">Create account</button>
+                <span class="error" aria-live="polite"></span>
             </form>
             <div class="log-in">
                 <p>Already have an account?</p>
